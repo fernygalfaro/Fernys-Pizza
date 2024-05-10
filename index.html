@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Ferny's Pizza </title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1> Welcome to Ferny's Pizza!</h1> 
+    <P> 123 Main Ave, Lockport IL, 60441</P>
+    <p> 815-123-4567</p>
+    <h2>Please order your favorite selection of pizza!</h2>
+    
+    <label for="size"> Choose the size of the pizza : </label>
+    
+    <select name="size" id="size">
+        <option value="Small"> Small(+10.99)</option>
+        <option value="Medium"> Medium(+14.99)</option>
+        <option value="Large"> Large(+17.99)</option>
+    </select>
+    <br/>
+    <label for="crust"> Choose a style of crust : </label>
+    <select name="crust" id="crust">
+        <option value="Thin Crust"> Thin Crust</option>
+        <option value="Pan Crust"> Pan Crust(+2.00)</option>
+        <option value="Deep Dish"> Deep Dish(+4.00)</option>
+    </select>
+    <br/>  
+    <label for="sauce"> Choose amout of sauce : </label>
+    <select name="sauce" id="sauce">
+        <option value="Normal"> Normal</option>
+        <option value="Light"> Light(-1.00)</option>
+        <option value="Extra"> Extra(+1.00)</option>
+    </select>
+    <br/>
+    <label for="cheese"> Choose amout of cheese : </label>
+    <select name="cheese" id="cheese">
+        <option value="Normal"> Normal</option>
+        <option value="Light"> Light(-1.00)</option>
+        <option value="Extra"> Extra(+1.00)</option>
+    </select>
+   
+    <fieldset>
+    <legend> Meat toppings (+3.00 per topping)</legend>
+        <img class="meatpicture" src="meat.jpeg" alt="meat toppings">
+        </br >
+        <label for="Ham"> Ham </label>
+        <input type="checkbox" id="Ham" name="meat" value="Ham">
+        <br />
+        <label for="Beef"> Beef </label>
+        <input type="checkbox" id="Beef" name="meat" value="Beef">
+        <br />
+        <label for="Salami"> Salami </label>
+        <input type="checkbox" id="Salami" name="meat" value="Salami">
+        <br/>
+        <label for="Pepperoni"> Pepperoni</label>
+        <input type="checkbox" id="Pepperoni" name="meat" value="Pepperoni">
+        </br>
+        <label for="Italian Sausage"> Italian Sausage </label>
+        <input type="checkbox" id="Italian Sausage" name="meat" value="Italian Sausage">
+        <br/>
+        <label for="Premium Chicken"> Premium Chicken </label>
+        <input type="checkbox" id="Premium Chicken" name="meat" value="Premium Chicken ">
+        <br />
+        <label for="Bacon"> Bacon</label>
+        <input type="checkbox" id="Bacon" name="meat" value="Bacon">
+    </fieldset>
+        
+        
+    <fieldset>
+        <legend>Vegetable Toppings (+3.00 per topping)</legend>
+        <img src="vegetables.jpg.webp" alt="vegtable toppings">
+        <label for="Jalapeno">Jalapeno Peppers</label>
+        <input type="checkbox" id="Jalapeno" name="veggie" value="Jalapeno">
+        <br />
+        <label for="Onions">Onions</label>
+        <input type="checkbox" id="Onions" name="veggie" value="Onions">
+        <br />
+        <label for="BananaPeppers">Banana Peppers</label>
+        <input type="checkbox" id="BananaPeppers" name="veggie" value="Banana Peppers">
+        <br />
+        <label for="Mushrooms">Mushrooms</label>
+        <input type="checkbox" id="Mushrooms" name="veggie" value="Mushrooms">
+        <br />
+        <label for="Pineapple">Pineapple</label>
+        <input type="checkbox" id="Pineapple" name="veggie" value="Pineapple">
+        <br />
+        <label for="GreenPeppers">Green Peppers</label>
+        <input type="checkbox" id="GreenPeppers" name="veggie" value="Green Peppers">
+        <br/>
+        <label for="Spinach">Spinach</label>
+        <input type="checkbox" id="Spinach" name="veggie" value="Spinach">
+        
+    </fieldset>    
+    <div class="center">
+    <button >Checkout</button>
+    </div>
+    <footer>
+        <div class="footerimages">
+        <img src="paypal.png" alr="Paypal">
+        <img src="visa.png" alr="Visa">
+        <img src="applepay.jpeg" alr="ApplePay">
+        <img src="mastercard.jpeg" alr="Mastercard">
+        </div>       
+        <a href="FernysPizzaLockport@gmail.com">FernysPizzaLockport@gmail.com</a>
+    </footer>
+    <script src="main.js"></script>
+    <div id="output"></div>
+</body>
+</html>

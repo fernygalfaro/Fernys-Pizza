@@ -1,0 +1,76 @@
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+footer {
+    text-align: center;
+    font-size: larger;
+}
+
+label{
+    font-size: 26px;
+}
+img{
+    float: right;
+    height: 20%;
+    width: 25%;
+    border-radius: 8px;
+    
+}
+.meatpicture{
+    float: right;
+    height: 10%;
+    width: 15%;
+    display: block;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+button {
+    font-size: 16px; 
+    padding: 10px 10px;
+}
+
+body {
+    background-image: url('fernypizza.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: larger;
+}
+
+.footerimages {
+    display: flex;
+    justify-content: space-around; /* Evenly space the images */
+    align-items: center; /* Align items vertically */
+    padding: 15px 0; /* Add some padding */
+}
+
+.footerimages img {
+    width: 150px; /* Set a fixed width for all images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+a:link {
+  color: rgb(226, 75, 75);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(249, 144, 51);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(53, 248, 112);
+  background-color: transparent;
+  text-decoration: underline;
+}

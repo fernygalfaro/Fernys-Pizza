@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Ferny's Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Checkout</h1>
+    <form id="checkout-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br>
+
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method" required>
+            <option value="paypal">Paypal</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="applepay">Apple Pay</option>
+        </select><br>
+
+        <button type="submit">Place Order</button>
+    </form>
+    
+    <script>
+        document.getElementById('checkout-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Process the order here (e.g., send data to a server)
+            alert('Order placed successfully!');
+            // Redirect to home page
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
