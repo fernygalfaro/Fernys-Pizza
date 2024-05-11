@@ -39,4 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Error fetching balance: " + error.message);
         }
     });
+    document.getElementById('checkout').addEventListener('click', function() {
+        window.open('checkout.html'); 
+    });
+
 });
