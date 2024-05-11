@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    
     const checkoutButton = document.querySelector("button");
 
     checkoutButton.addEventListener("click", async function() {
@@ -30,15 +29,14 @@ document.addEventListener("DOMContentLoaded", function() {
             "Veggies: " + veggies.join(", ") + "\n" +
             "Total Toppings " + totalToppings);
 
-        // Call Azure Function API
+        // Fetch balance from Azure Function
         try {
-            const response = await fetch(`https://fernypizzacalculations.azurewebsites.net/api/pizzacalc?pizzaSize=${size}&crust=${crust}&sauce=${sauce}&cheese=${cheese}&toppings=${totalToppings}`);
-            const data = await response.json();
-            alert("Result from Azure Function:\n" + JSON.stringify(data));
+            const response = await fetch('https://fernypizzacalculations.azurewebsites.net/api/pizzacalc?pizzaSize=' + size + '&crust=' + crust + '&sauce=' + sauce + '&cheese=' + cheese + '&toppings=' + totalToppings);
+            const data = await response.text();
+            alert("The balance is " + data);
         } catch (error) {
-            console.error('Error calling Azure Function:', error);
-            alert('Error calling Azure Function. Please try again later.');
+            console.error('Error fetching data:', error);
+            alert("Error fetching balance: " + error.message);
         }
     });
-
 });
