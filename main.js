@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
     document.getElementById('checkout').addEventListener('click', function() {
-        window.open('checkout.html'); 
+        window.location.href = 'checkout.html'; 
     });
 
 });
