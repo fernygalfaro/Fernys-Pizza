@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         try {
             const response = await fetch('https://fernypizzacalculations.azurewebsites.net/api/pizzacalc?pizzaSize=' + size + '&crust=' + crust + '&sauce=' + sauce + '&cheese=' + cheese + '&toppings=' + totalToppings);
             const data = await response.text();
-            alert("The balance is " + data);
+            alert(data);
         } catch (error) {
             console.error('Error fetching data:', error);
             alert("Error fetching balance: " + error.message);
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('checkout').addEventListener('click', function() {
         setTimeout(function() {
             window.location.href = 'checkout.html';
-        }, 6000); 
+        }, 4000); 
     });
     
 });
