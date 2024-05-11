@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Call Azure Function API
         try {
-            const response = await fetch(`https://fernypizzacalculations.azurewebsites.net/api/pizzacalc?pizzaSize=${size}&crust=${crust}&cheese=${cheese}&sauce=${sauce}&toppings=${totalToppings}`);
+            const response = await fetch(`https://fernypizzacalculations.azurewebsites.net/api/pizzacalc?pizzaSize=${size}&crust=${crust}&sauce=${sauce}&cheese=${cheese}&toppings=${totalToppings}`);
             const data = await response.json();
             alert("Result from Azure Function:\n" + JSON.stringify(data));
         } catch (error) {
